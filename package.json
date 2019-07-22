@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "destyle.css": "^1.0.7",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
@@ -34,10 +35,11 @@
     "cucumber": "^5.1.0",
     "geckodriver": "^1.16.2",
     "jest": "^24.1.0",
-    "nodemon": "^1.18.9",
     "sass": "^1.22.9",
-    "sass-loader": "^7.2.0",
     "selenium-webdriver": "^4.0.0-alpha.4",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.18.9",
+    "sass-loader": "^7.1.0",
     "vue-jest": "^3.0.3"
   }
 }
