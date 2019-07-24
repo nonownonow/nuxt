@@ -18,6 +18,7 @@ export default {
 </script>
 
 <style scoped lang=scss>
+@import "~destyle.css";
 #membership-guide-anchor {
   display: flex;
   flex-direction: column;

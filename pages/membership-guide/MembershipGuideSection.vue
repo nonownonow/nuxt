@@ -1,11 +1,15 @@
 <template>
   <section class="MembershipGuideSection">
-    <img
-        v-for="index in 2"
-        :key="index"
-        :class="index===0? 'contents-img': 'contents-img-pc'"
+    <picture>
+      <source
+        :srcset="src.replace(/-m(?=.\w+$)/,'')"
+        media="(min-width: 640px)"
+      />
+      <img
         :alt="alt"
-    />
+        :src="src"
+      />
+    </picture>
   </section>
 </template>
 
@@ -15,18 +19,18 @@ export default {
   props: {
     alt: {
       type: String,
-      required: true
+      default: ''
+    },
+    src: {
+      type: String,
+      default: ''
     }
-  },
-  data() {
-    return {
-      src: "@/assets/daechi/ip/9900guide/tutor-2417-section1.png"
-    };
   }
 };
 </script>
 
 <style scoped lang=scss>
+@import "~destyle.css";
 .MembershipGuideSection {
 }
 </style>
