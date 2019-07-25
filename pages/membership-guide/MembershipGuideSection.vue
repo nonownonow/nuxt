@@ -1,13 +1,11 @@
 <template>
   <section class="MembershipGuideSection">
     <picture>
-      <source
-        :srcset="src.replace(/-m(?=.\w+$)/,'')"
-        media="(min-width: 640px)"
-      />
+
       <img
         :alt="alt"
-        :src="src"
+        sizes="(min-width:640px) 900px, (min-width: 320px) 500px, 200px"
+        srcset="./assets/tutor-2417-contents-m.png 320w, ./assets/tutor-2417-contents-m@2x.png 640w"
       />
     </picture>
   </section>

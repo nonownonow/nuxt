@@ -9,24 +9,7 @@
           type="section"
         />
       </nav>
-      <membership-guide-anchor/>
-      <section id="title" class="img-section">
-        <membership-guide-section
-          class="img-section"
-          alt="How TO APPLY 참 쉬운 대치동 초등 과외 신청하는 법"
-          :src="require('./assets/tutor-2417-title-m.png')"
-          type="section"
-        >
-        </membership-guide-section>
-      </section>
     </header>
-    <membership-guide-section
-      class="img-section"
-      alt="1. 메뉴에서 내 보관함을 클릭, 결제가 잘 되었는지 확인해주세요!"
-      :src="require('./assets/tutor-2417-section1-m.png')"
-      type="section"
-    />
-    <membership-guide-anchor/>
   </article>
 </template>
 

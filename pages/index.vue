@@ -3,7 +3,7 @@
     <div>
       <logo />
       <h1 class="title">
-        vue-template
+        vue-template haha slll;lj;kkkhhh;l;llklj;ljkkkkkkkkkk
       </h1>
       <h2 class="subtitle">
         My sensational Nuxt.js project
