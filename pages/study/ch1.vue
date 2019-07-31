@@ -1,15 +1,15 @@
 <template>
   <article class="container">
-    <h1>{{}}</h1>
+    <h1>{{h1}}aad</h1>
     <img src="../assets/img/blueflax.jpg">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad aliquid, consectetur distinctio dolorem dolorum error, et facilis illo iure libero molestias numquam obcaecati odit provident voluptate voluptatem, voluptatum. Magni.</p>
+    <p>{{p}}</p>
   </article>
 </template>
 
 <script>
 
 import db from './ch1.data.js'
-
+import faker from 'faker'
 export default {
   head: {
     title: 'Lorem ipsum dolor sit.'
@@ -17,12 +17,14 @@ export default {
   props: {
     h1: {
       type: String,
-      default: 'lorem'
+      default: faker.lorem.words()
     }
   },
   data () {
     return {
-      db: {}
+      h1: db.article.h1,
+      img: db.article.img,
+      p: db.article.p
     }
   },
 
