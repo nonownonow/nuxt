@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "test": "jest",
+    "test:e2e": "nightwatch",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",

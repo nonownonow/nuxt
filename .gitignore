@@ -86,3 +86,6 @@ sw.*
 
 # Mac OSX
 .DS_Store
+
+tests_output
+storybook-static
