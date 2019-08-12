@@ -5,8 +5,8 @@
   "author": "ryuilhwan",
   "private": true,
   "scripts": {
-    "test": "jest",
-    "test:e2e": "nightwatch",
+    "test:unit": "jest",
+    "test:e2e": "NODE_ENV=test cucumber-js --require-module @babel/register --require features/step_definitions",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
+    "@babel/register": "^7.5.5",
     "@storybook/addon-actions": "^5.1.10",
     "@storybook/addon-links": "^5.1.10",
     "@storybook/addons": "^5.1.10",
@@ -35,6 +36,7 @@
     "jest": "^24.1.0",
     "nightwatch": "^1.1.13",
     "nodemon": "^1.18.9",
+    "selenium-webdriver": "^4.0.0-alpha.4",
     "vue-jest": "^3.0.3"
   }
 }
