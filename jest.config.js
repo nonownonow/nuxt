@@ -9,8 +9,12 @@ module.exports = {
     '^.+\\.js$': 'babel-jest',
     '.*\\.(vue)$': 'vue-jest'
   },
-  'collectCoverage': true,
-  'collectCoverageFrom': [
+  testPathIgnorePatterns: [
+    "/node_modules/",
+    "/spec/"
+  ],
+  collectCoverage: true,
+  collectCoverageFrom: [
     '<rootDir>/components/**/*.vue',
     '<rootDir>/pages/**/*.vue'
   ]
