@@ -1,7 +1,17 @@
 <template>
   <main>
     <section>
-      good
+      내가 돌아왔다.
+
+      <h1>김동현 mission</h1>
+      <ul>
+        <li>
+          <router-link to="./mission1">mission1</router-link>
+        </li>
+        <li>
+          <router-link to="./mission2">mission2</router-link>
+        </li>
+      </ul>
     </section>
     <nuxt />
   </main>
