@@ -1,26 +1,11 @@
 <template>
-  <main>
-    <section>
-      내가 돌아왔다.
-
-      <h1>김동현 mission</h1>
-      <ul>
-        <li>
-          <router-link to="./mission1">mission1</router-link>
-        </li>
-        <li>
-          <router-link to="./mission2">mission2</router-link>
-        </li>
-      </ul>
-    </section>
-    <nuxt />
-  </main>
+  <nuxt/>
 </template>
 
 <style>
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
