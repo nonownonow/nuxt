@@ -5,6 +5,10 @@ export default {
     host: '0.0.0.0',
     port: 5000,
   },
+  serverMiddleware: [
+    // API middleware
+    '~/api/index.js'
+  ],
   /*
   ** Headers of the page
   */
